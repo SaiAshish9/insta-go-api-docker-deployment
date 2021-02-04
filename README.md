@@ -44,7 +44,7 @@ database: instagram
 insert into status(name,url) values('Sarthak','https://cdn.pixabay.com/photo/2016/08/24/23/08/cristiano-ronaldo-1618341__340.jpg');
 ```
 
-## Select * command shortcut
+## Select \* command shortcut
 
 ```
 TABLE status;
@@ -126,5 +126,34 @@ ALTER TABLE
 instagram=# alter table status add colors text;
 ALTER TABLE
 
+
+```
+
+## Docker Deployment
+
+```
+ sudo docker  build -t  insta-api  .
+  docker ps
+  sudo docker ps
+  sudo docker images
+  sudo docker rmi 7e7
+  sudo docker rmi 7e7 23e 320 f84 d9e 250 135
+   sudo docker rmi 7e7 23e 320 f84 d9e 250 135 -f
+   sudo docker images
+   sudo docker rmi 7e7
+   sudo docker images
+   docker run -d -p 80:80 golang-first
+   sudo docker run -d -p 80:80 insta-api
+   sudo docker ps
+  sudo docker ps -a
+   sudo docker rm 9ec ce7 b7a d2b 6d7 ccc
+   sudo docker ps -a
+   sudo docker run -d -p 80:80 insta-api
+   sudo docker ps -a
+   sudo docker rm a07
+   sudo docker logs
+   sudo docker logs c3d
+  history
+  go get -u "github.com/saiashish9/insta-go-api-docker-deployment"
 
 ```
